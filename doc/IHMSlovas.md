@@ -12,8 +12,10 @@ Liste des infos affichées à l'écran :
 * Vitesse sol
 * Vitesse verticale
 * Finesse sol
+* vitesse et direction du vent
 * Cap actuel
 * *Position GPS?*
+* Direction du prochain point enregistré (distance, ETA suivantdistance+averge speed))
 
 Barrette de diodes : vitesse verticale 
 
@@ -25,7 +27,7 @@ Nombre de diodes allumées|Montée : vert|Descente : rouge
 4|4 à 5 m/s|3-4 m/s
 5|>5 m/s|>4 m/s
 
-Si action sur le bouton réglage : *à définir*
+Si action sur le bouton réglage : Défilement dans la liste des balises/aterro enregistrés
 
 ##Menu 2 : Mode *Approche*##
 Ce mode permet de vérifier que l'on est finesse du terrain
@@ -46,6 +48,17 @@ Barrette de diodes :
 Si action sur le bouton réglage : défilement des terrains enregistrés
 
 ##Menu 3 : Mode *Finale*##
+En fonction de finesse sol/cap/position gps/point d'attero
+
+Nombre de diodes vertes allumées|Distance au point "attero"
+:-----------------------:|:-----------:
+6|5m
+5|10m
+3|20m
+1|30m
+
+Si plus de 30m du centre (donc cercle de 60m de diametre) risque de hors terrain : 6 diode rouges
+
 Cette vue pourrait proposer une aide à l'atterrissage. Soit une aide à la PTU, plus complexe à programmer, soit, plus simple, une aide la phase finale (trop haut, trop bas par rapport à mon point de visé, ou par rapport aux limites du terrain.
 
 ##Menu 4 : Mode *Configuration*##
